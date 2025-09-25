@@ -16,12 +16,12 @@ class Solution {
         q.push(0);
         visited[0] = true;
 
-        while(!q.empty()) {
+        while(!q.empty()) { // display each vertix from queue until queue is empty
             int idx = q.front();
             cout << idx << "\n";
             q.pop();
 
-            for(auto i : adj[idx]) {
+            for(auto i : adj[idx]) {//add every vertix of node to queue if it is unvisited 
                 if (!visited[i]) {
                     visited[i] = true;
                     q.push(i);
@@ -32,3 +32,4 @@ class Solution {
         return true;
     }
 };
+
