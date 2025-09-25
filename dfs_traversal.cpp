@@ -21,7 +21,7 @@ class Solution {
             cout << idx << "\n";
             q.pop();
 
-            for(auto i : adj[idx]) {//add every vertix of node to queue if it is unvisited 
+            for(auto i : adj[idx]) {//add the neighbhours of a node to queue if it is unvisited 
                 if (!visited[i]) {
                     visited[i] = true;
                     q.push(i);
@@ -32,4 +32,5 @@ class Solution {
         return true;
     }
 };
+
 
