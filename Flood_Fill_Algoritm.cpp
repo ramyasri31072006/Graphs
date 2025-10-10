@@ -1,3 +1,8 @@
+// Given a starting pixel, the algorithm changes the color of that pixel and 
+//all adjacent pixels that have the same original color to a new color.
+// It continues this process recursively or iteratively, spreading out to all 
+//connected pixels with the same original color.
+
 class Solution {
   public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc,
@@ -49,3 +54,4 @@ class Solution {
         return c;
     }
 };
+
