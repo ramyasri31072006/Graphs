@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>   // Includes all standard C++ libraries
+#include <bits/stdc++.h>  
 using namespace std;
 
 /*
@@ -107,4 +107,5 @@ int main() {
         cout << "Different Component\n";
 
     return 0;   // End of program
+
 }
